@@ -12,11 +12,6 @@ def home():
     return render_template('home.html', title='О Компании')
 
 
-@app.route('/contacts')
-def contacts():
-    return render_template('contacts.html', title='Контакты')
-
-
 @app.route('/researches')
 def researches():
     return render_template('researches.html', title='Геолого-технологические исследования')
@@ -25,3 +20,13 @@ def researches():
 @app.route('/service')
 def service():
     return render_template('service.html', title='Телеметрическое сопровождение')
+
+
+@app.route('/billboard')
+def billboard():
+    return render_template('billboard.html', title='Доска информации')
+
+
+@app.route('/contacts')
+def contacts():
+    return render_template('contacts.html', title='Контакты')

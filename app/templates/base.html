@@ -8,7 +8,7 @@
 {% endblock %}
 
 {% block scripts %}
-    <!-- <script src="{{ url_for('.static', filename='script/main.js') }}"></script> -->
+    <script src="{{ url_for('.static', filename='script/main.js') }}"></script>
     {{ super() }}
 {% endblock %}
 
@@ -25,7 +25,7 @@
 
 
 {% block navbar %}
-    <nav class="navbar navbar-inverse" role="navigation">
+    <nav class="navbar navbar-inverse fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
@@ -41,6 +41,7 @@
                     <li><a class="active" href="/home">О предприятии</a></li>
                     <li><a href="/researches">ГТИ</a></li>
                     <li><a href="/service">Телеметрическое сопровождение</a></li>
+                    <li><a href="/billboard">Доска информации</a></li>
                     <li><a href="/contacts">Контакты</a></li>
                 </ul>
             </div>
@@ -50,6 +51,7 @@
 
 {% block content %}
     {{ super() }}
+<body data-spy="scroll" data-target="#myNavbar" data-offset="50"></body>
 {% block footer %}
 <footer>
   <div class="container">

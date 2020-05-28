@@ -1,9 +1,13 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+    position: relative;
 }
 
 .header {
     background: linear-gradient(to top right, red  0px, yellow 100px, white 150px);
+    color: #000000;
     font-family: "Droid Sans Ethiopic";
     text-align: center;
 }
@@ -97,31 +101,366 @@ body {
 }
 
 .jumbotron {
-    background-color: #282828;
-    color: gray;
-    font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', sans-serif;
+    background-color: #ffffff; /* #282828 */
+    color: #000000;
+    font-family: "PT Sans Narrow";
     padding: 10px;
-
 }
 
-/* Column container */
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Main column */
-.main {
-    flex: 70%; /* Set the width of the main content */
-    background-color: white; /* White background color */
+.block_1 {
+    flex: 40%; /* Set the width of the main content */
+    background-color: #333333; /* White background color */
+    padding: 20px; /* Some padding */
+    text-align: left;
+    font-size: 110%;
+}
+
+.style_li {
+    padding:0;
+    list-style: none;
+}
+
+.style_li li {
+    padding:6px;
+}
+
+.style_li li:before {
+    padding-right:10px;
+    font-weight: bold;
+    color: #C0C0C0;
+    content: "\2714";
+    transition-duration: 0.5s;
+}
+
+.style_li li:hover:before {
+    color: yellow;
+    content: "\2714";
+}
+
+.block_2 {
+    flex: 60%;
+    background: #333333 no-repeat;
+    background-image: url(../images/picture_1.png);
+    background-size: contain;
+    background-position: center;
     padding: 20px; /* Some padding */
 }
 
-/* Sidebar/left column */
-.side {
-    flex: 30%; /* Set the width of the sidebar */
-    background-color: #f1f1f1; /* Grey background color */
-    padding: 20px; /* Some padding */
+.block_3 {
+    flex: 50%; /* Set the width of the main content */
+    background-color: #333333; /* White background color */
+    padding: 10px; /* Some padding */
+    text-align: left;
+    font-size: 110%;
+}
+.block_4 {
+    flex: 50%; /* Set the width of the main content */
+    background-color: #333333; /* White background color */
+    padding: 10px; /* Some padding */
+    text-align: left;
+    font-size: 110%;
 }
 
+.imgsize {
+    width: 600px;
+}
+
+.block_5 {
+    background-color: #ffffff; /* White background color */
+    color: #333333;
+    padding: 20px; /* Some padding */
+    text-align: justify;
+    font-size: 120%;
+}
+
+.block_6 {
+    background-image: url(../images/picture_2.png);
+    display: block;
+    vertical-align: top;
+}
+
+.block_6 img {
+    width: 100%;
+    height: 80%;
+}
+
+.but_1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width:400px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_1:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_1 {
+    position: absolute;
+    top: 41%;
+    left: 15%;
+}
+
+.but_2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 250px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_2:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_2 {
+    position: absolute;
+    top: 45%;
+    left: 15%;
+}
+
+.but_3 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width:440px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_3:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_3 {
+    position: absolute;
+    top: 41%;
+    left: 83.3%;
+}
+
+.but_4 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 250px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_4:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_4 {
+    position: absolute;
+    top: 45%;
+    left: 85%;
+}
+
+.but_5 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 250px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_5:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_5 {
+    position: absolute;
+    top: 49%;
+    left: 85%;
+}
+
+.but_6 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width: 250px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_6:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_6 {
+    position: absolute;
+    top: 67%;
+    left: 15%;
+}
+
+.but_7 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #333333;
+  padding: 12px 24px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #ffffff;
+  width:400px;
+  text-decoration:none;
+  text-align:center;
+  margin:20px auto;
+  display: block;
+  background-image: linear-gradient(to left,transparent,transparent 50%,yellow 50%, yellow);
+  background-position: 100% 0;
+  background-size: 200% 100%;
+  transition: all .25s ease-in;
+  font: 400 14px "Droid Sans Ethiopic";
+  border: 1px solid #ffffff;
+}
+
+.but_7:hover {
+    background-position: 0 0;
+    cursor: pointer;
+    color: #333333;
+    border-color: #333333;
+}
+
+.block_6 .but_7 {
+    position: absolute;
+    top: 71%;
+    left: 15%;
+}
+
+.block_at {
+    background-color: #333333; /* White background color */
+    color: #ffffff;
+    text-align: justify;
+    font-size: 130%;
+    background-size: contain;
+}
+
+.vacancy {
+    flex: 50%; /* Set the width of the main content */
+    background-color: #333333; /* White background color */
+    padding: 10px; /* Some padding */
+    text-align: left;
+    font-size: 110%;
+}
+
+.docinfo {
+    flex: 50%; /* Set the width of the main content */
+    background-color: #333333; /* White background color */
+    padding: 10px; /* Some padding */
+    text-align: left;
+    font-size: 110%;
+}
